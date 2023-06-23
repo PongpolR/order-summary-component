@@ -1,0 +1,46 @@
+@media all {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display';
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    background-color: hsl(225, 100%, 98%);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+  header img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  h1 {
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+/* desktop */
+@media(min-width: 376px) {
+  body {
+    background: url('images/pattern-background-desktop.svg');
+    background-repeat:repeat-x;
+    background-color: hsl(225, 100%, 94%);
+  } 
+}
+
+/* mobile */
+@media(max-width: 375px) {
+  body {
+    background: url('images/pattern-background-mobile.svg');
+    background-repeat:repeat-x;
+    background-color: hsl(225, 100%, 94%);
+  }
+}
